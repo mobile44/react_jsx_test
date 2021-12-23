@@ -20,7 +20,7 @@ const Home=()=> {
     <div style={StyleSheet}>
       <h2>Home View</h2>
       <h3>{slug}</h3>
-      <p>在React中使用React Router v6 的指南</p>
+      <p>How to use eact Router v6 in React</p>
     </div>
   );
 }

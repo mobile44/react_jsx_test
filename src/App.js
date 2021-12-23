@@ -7,13 +7,13 @@ const App=()=>{
   const BlogPosts = {
     '1': {
       page: "/",
-      title: '第一頁',
-      description: '練習中...'
+      title: 'First Page',
+      description: 'Practicing...'
     },
     '2': {
       page: "/",
-      title: '第二頁',
-      description: '實踐中...'
+      title: 'Second Page',
+      description: 'Executing...'
     },
   };
   return(
