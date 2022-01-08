@@ -1,0 +1,106 @@
+.topMenu {
+  overflow: hidden;
+  background: rgb(26, 26, 26);
+}
+.topMenu img {
+  padding: 8px 3px;
+  margin: 5px;
+}
+.topMenu a {
+  float: left;
+}
+.topMenu a:hover {
+  background-color: rgb(232, 239, 245);
+  color:rgb(11, 14, 216)
+}
+.topMenuRight {
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding-right: 10px;
+}
+.link {
+  text-decoration: none;
+  padding: 23px 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #f1f1f1;
+}
+.subMenu {
+  background-color: rgb(232, 239, 245);
+  display: inline-block;
+  width: 100%;
+  margin-bottom: -3px;
+  /*overflow: hidden;*/
+}
+.subMenu img {
+  float: left;
+  padding: 0px 10px;
+}
+.subMenuRight {
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-right: 10px;
+  /*overflow: hidden;*/
+}
+.flat {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 28px 5px 5px 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: rgb(26, 26, 26);
+}
+.flat:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.flat:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.dropBTN {
+  background-color: rgb(232, 239, 245);
+  color: rgb(26, 26, 26);
+  padding: 16px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.dropDown {
+  position: relative;
+  display: inline-block;
+}
+.dropDownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropDownContent .dropPoint {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropDownContent .dropPoint:hover {
+  background-color: #ddd;
+}
+.dropDown:hover .dropDownContent {
+  display: block;
+}
+.dropDown:hover .dropBTN {
+  /*background-color: #3e8e41;*/
+}

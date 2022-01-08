@@ -62,9 +62,9 @@ const App=()=>{
                 <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
                 <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
                 <Link className="flat" to="/react_jsx_test/" >About Us</Link>
-                <div className="dropDown">
-                  <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
-                  <div className="dropDownContent">
+                <div className="dropMenu">
+                  <Link className="drop" to="/react_jsx_test/" >Resources &dArr;</Link>
+                  <div className="subDrop">
                     <Link className="dropPoint" to="/react_jsx_test/">R 1</Link>
                     <Link className="dropPoint" to="/react_jsx_test/">R 2</Link>
                     <Link className="dropPoint" to="/react_jsx_test/">R 3</Link>
