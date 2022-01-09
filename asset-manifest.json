@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/react_jsx_test/static/css/main.77d1e0fd.chunk.css",
-    "main.js": "/react_jsx_test/static/js/main.81e5b3a1.chunk.js",
-    "main.js.map": "/react_jsx_test/static/js/main.81e5b3a1.chunk.js.map",
-    "runtime-main.js": "/react_jsx_test/static/js/runtime-main.4409258c.js",
-    "runtime-main.js.map": "/react_jsx_test/static/js/runtime-main.4409258c.js.map",
-    "static/js/2.dea1a931.chunk.js": "/react_jsx_test/static/js/2.dea1a931.chunk.js",
-    "static/js/2.dea1a931.chunk.js.map": "/react_jsx_test/static/js/2.dea1a931.chunk.js.map",
-    "static/js/3.07aa3984.chunk.js": "/react_jsx_test/static/js/3.07aa3984.chunk.js",
-    "static/js/3.07aa3984.chunk.js.map": "/react_jsx_test/static/js/3.07aa3984.chunk.js.map",
+    "main.css": "/react_jsx_test/static/css/main.c0c18cf0.chunk.css",
+    "main.js": "/react_jsx_test/static/js/main.f7b2f4a2.chunk.js",
+    "main.js.map": "/react_jsx_test/static/js/main.f7b2f4a2.chunk.js.map",
+    "runtime-main.js": "/react_jsx_test/static/js/runtime-main.e80412e2.js",
+    "runtime-main.js.map": "/react_jsx_test/static/js/runtime-main.e80412e2.js.map",
+    "static/js/2.81af14dc.chunk.js": "/react_jsx_test/static/js/2.81af14dc.chunk.js",
+    "static/js/2.81af14dc.chunk.js.map": "/react_jsx_test/static/js/2.81af14dc.chunk.js.map",
+    "static/js/3.1eef084e.chunk.js": "/react_jsx_test/static/js/3.1eef084e.chunk.js",
+    "static/js/3.1eef084e.chunk.js.map": "/react_jsx_test/static/js/3.1eef084e.chunk.js.map",
     "index.html": "/react_jsx_test/index.html",
-    "static/css/main.77d1e0fd.chunk.css.map": "/react_jsx_test/static/css/main.77d1e0fd.chunk.css.map",
-    "static/js/2.dea1a931.chunk.js.LICENSE.txt": "/react_jsx_test/static/js/2.dea1a931.chunk.js.LICENSE.txt"
+    "static/css/main.c0c18cf0.chunk.css.map": "/react_jsx_test/static/css/main.c0c18cf0.chunk.css.map",
+    "static/js/2.81af14dc.chunk.js.LICENSE.txt": "/react_jsx_test/static/js/2.81af14dc.chunk.js.LICENSE.txt",
+    "static/media/square_cloudy.9b7a9c1c.jpg": "/react_jsx_test/static/media/square_cloudy.9b7a9c1c.jpg",
+    "static/media/square_cloudy_river.d1bbc539.jpg": "/react_jsx_test/static/media/square_cloudy_river.d1bbc539.jpg",
+    "static/media/square_good_weather.b30ce1cb.jpg": "/react_jsx_test/static/media/square_good_weather.b30ce1cb.jpg",
+    "static/media/square_school.8c21a59a.jpg": "/react_jsx_test/static/media/square_school.8c21a59a.jpg",
+    "static/media/square_sunset.3205d340.jpg": "/react_jsx_test/static/media/square_sunset.3205d340.jpg",
+    "static/media/square_sunset_sky.888f1746.jpg": "/react_jsx_test/static/media/square_sunset_sky.888f1746.jpg",
+    "static/media/square_sunset_tree.5562ae1d.jpg": "/react_jsx_test/static/media/square_sunset_tree.5562ae1d.jpg",
+    "static/media/square_sunshine_tree.351086ce.jpg": "/react_jsx_test/static/media/square_sunshine_tree.351086ce.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4409258c.js",
-    "static/js/2.dea1a931.chunk.js",
-    "static/css/main.77d1e0fd.chunk.css",
-    "static/js/main.81e5b3a1.chunk.js"
+    "static/js/runtime-main.e80412e2.js",
+    "static/js/2.81af14dc.chunk.js",
+    "static/css/main.c0c18cf0.chunk.css",
+    "static/js/main.f7b2f4a2.chunk.js"
   ]
 }
