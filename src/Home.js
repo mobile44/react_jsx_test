@@ -1,27 +1,40 @@
-import React from "react";
-import { useParams } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import SliderContent from './SliderContent';
+import Dots from './Dots';
+import Arrows from './Arrows';
+import sliderImage from "./sliderImage";
+import "./Home.css";
 
+const len = sliderImage.length - 1;
 
+function Home(props) {
+  const [activeIndex, setActiveIndex] = useState(0);
 
-const Home=()=> {
-  const { slug } = useParams();
-  const StyleSheet={
-    width:"100vw",
-    height:"100vh",
-    backgroundColor: slug==="1"?"#FF2E63":"#08D9D6",
-    display: "flex",
-    alignItems:"center",
-    justifyContent:"center",
-    flexDirection:"column"
-  }
-
-  return (
+  useEffect(() => {
+     const interval = setInterval(()=>{
+       setActiveIndex(activeIndex===len?0:activeIndex+1);
+     },5000)
+     return () => clearInterval(interval);
+  }, [activeIndex]);
     
-    <div style={StyleSheet}>
-      <h2>Home View</h2>
-      <h3>{slug}</h3>
-      <p>How to use eact Router v6 in React</p>
+  return (
+    <div className="slider-container">
+      <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
+      <Arrows
+        prevSlide={()=>
+          setActiveIndex(activeIndex<1?len:activeIndex-1)
+        }
+        nextSlide={()=>
+          setActiveIndex(activeIndex===len?0:activeIndex+1)
+        }
+      />
+      <Dots
+        activeIndex={activeIndex}
+        sliderImage={sliderImage}
+        onclick={(activeIndex)=>setActiveIndex(activeIndex)}
+      />
     </div>
   );
 }
+
 export default Home;
