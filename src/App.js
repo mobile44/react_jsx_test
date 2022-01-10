@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {BrowserRouter,Route,Routes,Link,Outlet} from "react-router-dom";
+import {BrowserRouter,Route,Routes,Link} from "react-router-dom";
 import './App.css';
 import facebook from './images/facebook.jpg';
 import linkedin from './images/linkedin.jpg';
@@ -77,37 +77,39 @@ const App=()=>{
           </div>
         )}
         {/*<button onClick={toggleNav} className="btn">Menu</button>*/}
-        <div className="minNav">
-          <div className="mediaBar">
-            <a href='https://www.facebook.com/KEV-Group-111378062266170/'>
-              <img src={facebook} alt='facebook' width="30" height="30"/>
-            </a>
-            <a href='https://www.linkedin.com/company/kev-group/'>
-              <img src={linkedin} alt='linkedin' width="30" height="30"/>
-            </a>
-            <a href='https://twitter.com/kevgroup?lang=en'>
-              <img src={twitter} alt='twitter' width="30" height="30"/>
-            </a>
-            <a href='https://www.instagram.com/kevgroup/'>
-              <img src={instagram} alt='instagram' width="30" height="30"/>
-            </a>
-            <div className="shortMenu" onClick={toggleNav}>
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-              <div className="bar3"></div>
+        {(screenWidth <= 800) && (
+          <div className="minNav">
+            <div className="mediaBar">
+              <a href='https://www.facebook.com/KEV-Group-111378062266170/'>
+                <img src={facebook} alt='facebook' width="30" height="30"/>
+              </a>
+              <a href='https://www.linkedin.com/company/kev-group/'>
+                <img src={linkedin} alt='linkedin' width="30" height="30"/>
+              </a>
+              <a href='https://twitter.com/kevgroup?lang=en'>
+                <img src={twitter} alt='twitter' width="30" height="30"/>
+              </a>
+              <a href='https://www.instagram.com/kevgroup/'>
+                <img src={instagram} alt='instagram' width="30" height="30"/>
+              </a>
+              <div className="shortMenu" onClick={toggleNav}>
+                <div className="bar1"></div>
+                <div className="bar2"></div>
+                <div className="bar3"></div>
+              </div>
             </div>
+            {(toggleMenu) && (
+              <div className="firstBar">
+                <Link className="link" to="/react_jsx_test/" >Blog</Link>
+                <Link className="link" to="/react_jsx_test/" >Careers</Link>
+                <Link className="link" to="/react_jsx_test/" >In the News</Link>
+                <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
+                <Link className="link" to="/react_jsx_test/" >Contact</Link>
+              </div>
+            )}
           </div>
-          {(toggleMenu) && (
-            <div className="firstBar">
-              <Link className="link" to="/react_jsx_test/" >Blog</Link>
-              <Link className="link" to="/react_jsx_test/" >Careers</Link>
-              <Link className="link" to="/react_jsx_test/" >In the News</Link>
-              <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
-              <Link className="link" to="/react_jsx_test/" >Contact</Link>
-          </div>
-          )}
-          
-        </div>
+        )}
+        
       </nav>
       
       <Routes>
