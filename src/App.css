@@ -1,137 +1,210 @@
-.topMenu {
-  overflow: hidden;
-  background: rgb(26, 26, 26);
+@media screen and (min-width: 801px){
+  .topMenu {
+    overflow: hidden;
+    background: rgb(26, 26, 26);
+  }
+  .topMenu img {
+    padding: 8px 3px;
+    margin: 5px;
+  }
+  .topMenu a {
+    float: left;
+  }
+  .topMenu a:hover {
+    background-color: rgb(232, 239, 245);
+    color:rgb(11, 14, 216)
+  }
+  .topMenuRight {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  .link {
+    text-decoration: none;
+    padding: 23px 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #f1f1f1;
+  }
+  .subMenu {
+    background-color: rgb(232, 239, 245);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: -3px;
+    /*overflow: hidden;*/
+  }
+  .subMenu img {
+    float: left;
+    padding: 0px 10px;
+  }
+  .subMenuRight {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-right: 10px;
+    /*overflow: hidden;*/
+  }
+  .flat {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 28px 5px 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(26, 26, 26);
+  }
+  .flat:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+  }
+  .flat:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+  .dropBTN {
+    background-color: rgb(232, 239, 245);
+    color: rgb(26, 26, 26);
+    padding: 16px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .dropBTN:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+  }
+  .dropBTN:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+  .dropDown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropDownContent .dropPoint {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropDownContent .dropPoint:hover {
+    background-color: #ddd;
+  }
+  .dropDown:hover .dropDownContent {
+    display: block;
+  }
+  .dropDown:hover .dropBTN {
+    /*background-color: #3e8e41;*/
+  }
+  .meet {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  .meet:hover {
+    background-color: rgb(232, 239, 245);
+  }
+  .shortMenu {
+    /*display: none;*/
+  }
+  .bar1, .bar2, .bar3 {
+    /*width: 35px;
+    height: 5px;
+    background-color: rgb(14, 17, 1);
+    margin: 6px 0;
+    transition: 0.4s;*/
+  }
 }
-.topMenu img {
-  padding: 8px 3px;
-  margin: 5px;
-}
-.topMenu a {
-  float: left;
-}
-.topMenu a:hover {
-  background-color: rgb(232, 239, 245);
-  color:rgb(11, 14, 216)
-}
-.topMenuRight {
-  float: right;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  padding-right: 10px;
-}
-.link {
-  text-decoration: none;
-  padding: 23px 2px;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #f1f1f1;
-}
-.subMenu {
-  background-color: rgb(232, 239, 245);
-  display: inline-block;
-  width: 100%;
-  margin-bottom: -3px;
-  /*overflow: hidden;*/
-}
-.subMenu img {
-  float: left;
-  padding: 0px 10px;
-}
-.subMenuRight {
-  float: right;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  padding-right: 10px;
-  /*overflow: hidden;*/
-}
-.flat {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  padding: 28px 5px 5px 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: rgb(26, 26, 26);
-}
-.flat:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom center;
-  transition: transform 0.25s ease-out;
-}
-.flat:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom center;
-}
-.dropBTN {
-  background-color: rgb(232, 239, 245);
-  color: rgb(26, 26, 26);
-  padding: 16px;
-  font-size: 16px;
-  text-decoration: none;
-  margin-right: 10px;
-}
-.dropBTN:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom center;
-  transition: transform 0.25s ease-out;
-}
-.dropBTN:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom center;
-}
-.dropDown {
-  position: relative;
-  display: inline-block;
-}
-.dropDownContent {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropDownContent .dropPoint {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropDownContent .dropPoint:hover {
-  background-color: #ddd;
-}
-.dropDown:hover .dropDownContent {
-  display: block;
-}
-.dropDown:hover .dropBTN {
-  /*background-color: #3e8e41;*/
-}
-.meet {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-.meet:hover {
-  background-color: rgb(232, 239, 245);
+@media screen and (max-width: 800px) {
+  .minNav {
+    /*padding: 30px;*/
+  }
+  .mediaBar {
+    overflow: hidden;
+    background: rgb(26, 26, 26);
+  }
+  .mediaBar img {
+    padding: 8px 3px;
+    margin: 5px;
+  }
+  .mediaBar a {
+    float: left;
+  }
+  .mediaBar a:hover {
+    background-color: rgb(232, 239, 245);
+    /*color:rgb(11, 14, 216);*/
+  }
+  .shortMenu {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(137, 138, 132);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .firstBar {
+    background-color: rgb(43, 46, 49);
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+  }
+  .firstBar:hover {
+    /*color:rgb(11, 14, 216);*/
+    /*font-size: 18px;*/
+    /*font-weight: bold;*/
+  }
+  .link {
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin-right: 5px;
+    color: #f1f1f1;
+  }
+  .link:hover {
+    color:rgb(183, 184, 240);
+    font-weight: bold;
+  }
+  
 }
