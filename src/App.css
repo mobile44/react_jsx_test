@@ -172,7 +172,7 @@
     font-size: 12px;
     padding: 10px 10px 0px 10px;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
   }
   .link {
     text-decoration: none;
@@ -193,7 +193,7 @@
     font-size: 12px;
     padding: 10px 10px 0px 10px;
     /*overflow: auto;*/
-    width: 100%;
+    width: 100vw;
   }
   .flat {
     text-decoration: none;
