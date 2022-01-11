@@ -9,6 +9,8 @@ const len = sliderImage.length - 1;
 
 function Home(props) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isActive, setIsActive] = useState(false);
+  const [value, setValue] = useState('');
 
   useEffect(() => {
      const interval = setInterval(()=>{
@@ -16,23 +18,41 @@ function Home(props) {
      },5000)
      return () => clearInterval(interval);
   }, [activeIndex]);
-    
+  
+  function handleTextChange(text) {
+    setValue(text);
+  
+    if (text !== '') {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  }
+
   return (
-    <div className="slider-container">
-      <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
-      <Arrows
-        prevSlide={()=>
-          setActiveIndex(activeIndex<1?len:activeIndex-1)
-        }
-        nextSlide={()=>
-          setActiveIndex(activeIndex===len?0:activeIndex+1)
-        }
-      />
-      <Dots
-        activeIndex={activeIndex}
-        sliderImage={sliderImage}
-        onclick={(activeIndex)=>setActiveIndex(activeIndex)}
-      />
+    <div>
+      <div className="slider-container">
+        <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
+        <Arrows
+          prevSlide={()=>
+            setActiveIndex(activeIndex<1?len:activeIndex-1)
+          }
+          nextSlide={()=>
+            setActiveIndex(activeIndex===len?0:activeIndex+1)
+          }
+        />
+        <Dots
+          activeIndex={activeIndex}
+          sliderImage={sliderImage}
+          onclick={(activeIndex)=>setActiveIndex(activeIndex)}
+        />
+      </div>
+      <div id="float-label">
+        <input type="email" value={value} onChange={(e)=>handleTextChange(e.target.value)}/>
+          <label className={isActive?"Active":""} htmlFor="email">
+            E-mail
+          </label>
+      </div>
     </div>
   );
 }
