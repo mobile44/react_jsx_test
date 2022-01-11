@@ -167,13 +167,11 @@
   }
   .firstBar {
     background-color: rgb(43, 46, 49);
-    float: left;
+    /*float: left;*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 10px 10px 0px 10px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+    /*width: 100%;*/
   }
   .link {
     text-decoration: none;
@@ -189,12 +187,11 @@
   }
   .secondBar {
     background-color: rgb(18, 32, 46);
-    float: left;
+    /*float: left;*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 10px 10px 0px 10px;
-    /*overflow: auto;*/
-    width: 100vw;
+    /*width: 100%;*/
   }
   .flat {
     text-decoration: none;
