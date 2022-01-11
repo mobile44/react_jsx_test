@@ -138,6 +138,7 @@
   .mediaBar {
     overflow: hidden;
     background: rgb(26, 26, 26);
+    width: 100%;
   }
   .mediaBar img {
     padding: 8px 5px;
@@ -203,7 +204,7 @@
   }
   .flat:hover {
     color:rgb(235, 90, 138);
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
   .dropDown {
     position: relative;
@@ -229,7 +230,7 @@
   }
   .dropBTN:hover {
     color:rgb(235, 90, 138);
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
   .dropDownContent .dropPoint {
     color: black;
