@@ -138,7 +138,6 @@
   .mediaBar {
     overflow: hidden;
     background: rgb(26, 26, 26);
-    width: 100%;
   }
   .mediaBar img {
     padding: 8px 5px;
@@ -172,6 +171,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 10px 10px 0px 10px;
+    overflow: hidden;
     width: 100%;
   }
   .link {
@@ -192,6 +192,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 10px 10px 0px 10px;
+    /*overflow: auto;*/
     width: 100%;
   }
   .flat {
