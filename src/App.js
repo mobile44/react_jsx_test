@@ -6,6 +6,7 @@ import linkedin from './images/linkedin.jpg';
 import twitter from './images/twitter.jpg';
 import instagram from './images/instagram.jpg';
 import logo from './images/logo.jpg';
+import minlogo from './images/minlogo.jpg';
 import Home from './Home';
 
 
@@ -80,6 +81,9 @@ const App=()=>{
         {(screenWidth <= 800) && (
           <div className="minNav">
             <div className="mediaBar">
+            <a href='./'>
+                <img src={minlogo} alt='minlogo' height="30"/>
+              </a>
               <a href='https://www.facebook.com/KEV-Group-111378062266170/'>
                 <img src={facebook} alt='facebook' width="30" height="30"/>
               </a>
@@ -92,6 +96,7 @@ const App=()=>{
               <a href='https://www.instagram.com/kevgroup/'>
                 <img src={instagram} alt='instagram' width="30" height="30"/>
               </a>
+              <button className="meet">Schedule Meeting</button>
               <div className="shortMenu" onClick={toggleNav}>
                 <div className="bar1"></div>
                 <div className="bar2"></div>
@@ -99,12 +104,29 @@ const App=()=>{
               </div>
             </div>
             {(toggleMenu) && (
-              <div className="firstBar">
-                <Link className="link" to="/react_jsx_test/" >Blog</Link>
-                <Link className="link" to="/react_jsx_test/" >Careers</Link>
-                <Link className="link" to="/react_jsx_test/" >In the News</Link>
-                <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
-                <Link className="link" to="/react_jsx_test/" >Contact</Link>
+              <div>
+                <div className="firstBar">
+                  <Link className="link" to="/react_jsx_test/" >Blog</Link>
+                  <Link className="link" to="/react_jsx_test/" >Careers</Link>
+                  <Link className="link" to="/react_jsx_test/" >In the News</Link>
+                  <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
+                  <Link className="link" to="/react_jsx_test/" >Contact</Link>
+                  
+                </div>
+                <div className="secondBar">
+                  <Link className="flat" to="/react_jsx_test/" >Products</Link>
+                  <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
+                  <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
+                  <Link className="flat" to="/react_jsx_test/" >About Us</Link>
+                  <div className="dropDown">
+                    <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
+                    <div className="dropDownContent">
+                      <Link className="dropPoint" to="/react_jsx_test/">R 1</Link>
+                      <Link className="dropPoint" to="/react_jsx_test/">R 2</Link>
+                      <Link className="dropPoint" to="/react_jsx_test/">R 3</Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             )}
           </div>
