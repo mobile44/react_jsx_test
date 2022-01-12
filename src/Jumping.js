@@ -12,25 +12,25 @@ const Jumping = () => {
       [blue.current],
       /*0.5,*/
       { y: 16 },
-      { y: -18, yoyo: true, repeat: -1, duration: 0.8 }
+      { y: -18, yoyo: true, repeat: -1, duration: 0.2 }
     );
     gsap.fromTo(
-        [yellow.current],
+        [red.current],
         /*0.5,*/
         { y: 16 },
-        { y: -18, yoyo: true, repeat: -1, duration: 1}
+        { y: -18, yoyo: true, repeat: -1, duration: 0.3}
       );
     gsap.fromTo(
-      [red.current],
+      [yellow.current],
       /*0.5,*/
       { y: -18 },
-      { y: 16, repeat: -1, yoyo: true, duration: 1 }
+      { y: 16, repeat: -1, yoyo: true, duration: 0.4 }
     );
     gsap.fromTo(
         [green.current],
         /*0.5,*/
         { y: -18 },
-        { y: 16, repeat: -1, yoyo: true, duration: 0.8 }
+        { y: 16, repeat: -1, yoyo: true, duration: 0.5 }
       );
   }, []);
 
