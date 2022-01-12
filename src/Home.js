@@ -4,6 +4,7 @@ import Dots from './Dots';
 import Arrows from './Arrows';
 import sliderImage from "./sliderImage";
 import "./Home.css";
+import Jumping from "./Jumping";
 
 const len = sliderImage.length - 1;
 
@@ -46,6 +47,9 @@ function Home(props) {
           sliderImage={sliderImage}
           onclick={(activeIndex)=>setActiveIndex(activeIndex)}
         />
+      </div>
+      <div className="jumpingBeans">
+        <Jumping/>
       </div>
       <div id="float-label">
         <input type="email" value={value} onChange={(e)=>handleTextChange(e.target.value)}/>
