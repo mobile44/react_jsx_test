@@ -5,6 +5,8 @@ import Arrows from './Arrows';
 import sliderImage from "./sliderImage";
 import "./Home.css";
 import Jumping from "./Jumping";
+import Scrolling from "./Scrolling";
+
 
 const len = sliderImage.length - 1;
 
@@ -56,6 +58,9 @@ function Home(props) {
           <label className={isActive?"Active":""} htmlFor="email">
             E-mail
           </label>
+      </div>
+      <div className="lightShades">
+        <Scrolling/>
       </div>
     </div>
   );
