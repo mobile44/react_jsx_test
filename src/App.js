@@ -8,7 +8,11 @@ import instagram from './images/instagram.jpg';
 import logo from './images/logo.jpg';
 import minlogo from './images/minlogo.jpg';
 import Home from './Home';
-
+import ViewPort from "./ViewPort";
+const fburl = "https://www.facebook.com/Google/";
+const linkedinurl = "https://www.linkedin.com/company/google";
+const twitterurl = "https://twitter.com/google";
+const instagramurl = "https://twitter.com/google";
 
 const App=()=>{
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -35,20 +39,20 @@ const App=()=>{
         {(screenWidth > 800) && (
           <div className="topNav">
             <div className="topMenu">
-              <a href='https://www.facebook.com/KEV-Group-111378062266170/'>
+              <a href={fburl}>
                 <img src={facebook} alt='facebook' width="30" height="30"/>
               </a>
-              <a href='https://www.linkedin.com/company/kev-group/'>
+              <a href={linkedinurl}>
                 <img src={linkedin} alt='linkedin' width="30" height="30"/>
               </a>
-              <a href='https://twitter.com/kevgroup?lang=en'>
+              <a href={twitterurl}>
                 <img src={twitter} alt='twitter' width="30" height="30"/>
               </a>
-              <a href='https://www.instagram.com/kevgroup/'>
+              <a href={instagramurl}>
                 <img src={instagram} alt='instagram' width="30" height="30"/>
               </a>
               <div className="topMenuRight">
-                <Link className="link" to="/react_jsx_test/" >Blog</Link>
+                <Link className="link" to="/react_jsx_test/viewport" >ViewPort Effect</Link>
                 <Link className="link" to="/react_jsx_test/" >Careers</Link>
                 <Link className="link" to="/react_jsx_test/" >In the News</Link>
                 <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
@@ -84,16 +88,16 @@ const App=()=>{
             <a href='./'>
                 <img src={minlogo} alt='minlogo' height="30"/>
               </a>
-              <a href='https://www.facebook.com/KEV-Group-111378062266170/'>
+              <a href={fburl}>
                 <img src={facebook} alt='facebook' width="30" height="30"/>
               </a>
-              <a href='https://www.linkedin.com/company/kev-group/'>
+              <a href={linkedinurl}>
                 <img src={linkedin} alt='linkedin' width="30" height="30"/>
               </a>
-              <a href='https://twitter.com/kevgroup?lang=en'>
+              <a href={twitterurl}>
                 <img src={twitter} alt='twitter' width="30" height="30"/>
               </a>
-              <a href='https://www.instagram.com/kevgroup/'>
+              <a href={instagramurl}>
                 <img src={instagram} alt='instagram' width="30" height="30"/>
               </a>
               <button className="meet">Schedule Meeting</button>
@@ -106,7 +110,7 @@ const App=()=>{
             {(toggleMenu) && (
               <div>
                 <div className="firstBar">
-                  <Link className="link" to="/react_jsx_test/" >Blog</Link>
+                  <Link className="link" to="/react_jsx_test/viewport" >ViewPort effect</Link>
                   <Link className="link" to="/react_jsx_test/" >Careers</Link>
                   <Link className="link" to="/react_jsx_test/" >In the News</Link>
                   <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
@@ -136,7 +140,8 @@ const App=()=>{
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path=":slug" element={<Home />} />
+        <Route path="/react_jsx_test/" element={<Home />} />
+        <Route path="/react_jsx_test/viewport" element={<ViewPort />} />
       </Routes>
     </BrowserRouter>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 function SliderContent({activeIndex, sliderImage}) {
   return (
-    <section>
+    <section id="homeSection">
       {sliderImage.map((slide, index)=>(
         <div
           key={index}

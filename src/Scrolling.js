@@ -76,9 +76,9 @@ const Scrolling = () => {
         scrollTrigger: {
           id: `section-${index+1}`,
           trigger: el,
-          start: 'top center+=100',
+          start: 'top center',
           //start: 'top top',
-          end: '+=300',
+          end: '+=800',
           toggleActions: 'play none none reverse'
         }
       });
