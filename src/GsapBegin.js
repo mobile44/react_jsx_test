@@ -43,7 +43,7 @@ function GsapBegin() {
       stagger: 0.33,
       repeat: -1,
       repeatDelay: 1,
-      duration: 2,
+      duration: 3,
       yoyo: true,
     });
 
@@ -53,7 +53,7 @@ function GsapBegin() {
       x: 150,
       repeat: -1,
       repeatDelay: 1,
-      duration: 2,
+      duration: 3,
       yoyo: true,
     })
   });
