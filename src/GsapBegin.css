@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
 
 :root {
-  --dark: #f0e8e8;
+  --dark: #1d1d1d;
   --light: #fff;
   --green: #28a92b;
 }
@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 50px;
+  padding: 10px;
 }
 
 .box1 {
