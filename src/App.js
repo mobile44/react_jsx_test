@@ -9,6 +9,8 @@ import logo from './images/logo.jpg';
 import minlogo from './images/minlogo.jpg';
 import Home from './Home';
 import ViewPort from "./ViewPort";
+import GsapBegin from "./GsapBegin";
+
 const fburl = "https://www.facebook.com/Google/";
 const linkedinurl = "https://www.linkedin.com/company/google";
 const twitterurl = "https://twitter.com/google";
@@ -53,7 +55,7 @@ const App=()=>{
               </a>
               <div className="topMenuRight">
                 <Link className="link" to="/react_jsx_test/viewport" >ViewPort Effect</Link>
-                <Link className="link" to="/react_jsx_test/" >Careers</Link>
+                <Link className="link" to="/react_jsx_test/gsapbegin" >GSAP Begin</Link>
                 <Link className="link" to="/react_jsx_test/" >In the News</Link>
                 <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
                 <Link className="link" to="/react_jsx_test/" >Contact</Link>
@@ -111,7 +113,7 @@ const App=()=>{
               <div>
                 <div className="firstBar">
                   <Link className="link" to="/react_jsx_test/viewport" >ViewPort effect</Link>
-                  <Link className="link" to="/react_jsx_test/" >Careers</Link>
+                  <Link className="link" to="/react_jsx_test/gsapbegin" >GSAP Begin</Link>
                   <Link className="link" to="/react_jsx_test/" >In the News</Link>
                   <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
                   <Link className="link" to="/react_jsx_test/" >Contact</Link>
@@ -142,6 +144,7 @@ const App=()=>{
         <Route path="/" element={<Home />} />
         <Route path="/react_jsx_test/" element={<Home />} />
         <Route path="/react_jsx_test/viewport" element={<ViewPort />} />
+        <Route path="/react_jsx_test/gsapbegin" element={<GsapBegin />} />
       </Routes>
     </BrowserRouter>
   );

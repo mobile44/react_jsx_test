@@ -4,8 +4,6 @@ import useIsInViewPort from "./useIsInViewPort";
 function AnimatedSection({ getStyles, children }) {
     const elementRef = useRef();
     const isInViewport = useIsInViewPort(elementRef);
-
-    
   
     return (
       <section id="animatedSection" style={getStyles(isInViewport)}>
