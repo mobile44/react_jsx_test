@@ -43,6 +43,7 @@ function GsapBegin() {
       stagger: 0.33,
       repeat: -1,
       repeatDelay: 2,
+      duration: 3,
       yoyo: true,
     });
 
