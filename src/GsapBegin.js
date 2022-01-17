@@ -2,7 +2,7 @@ import React, {useRef, useEffect, forwardRef, useState} from "react";
 import { gsap } from "gsap";
 import "./GsapBegin.css";
 
-const randomX = gsap.utils.random(-200, 200, 1, true);
+const randomX = gsap.utils.random(-150, 150, 1, true); //exercise 6
 
 function Box({children}) {
   return <div className="box2">{children}</div>;
@@ -30,6 +30,12 @@ function Circle1({children}) {
 
 function Rect({children, endX}) {
   const rectRef = useRef();
+  useEffect(()=>{
+    gsap.to(rectRef.current, {
+      x: endX
+    });
+  },[endX])
+  return <div className="box6" ref={rectRef}>{children}</div>;
 }
 
 function GsapBegin() {
@@ -43,6 +49,7 @@ function GsapBegin() {
   const [reversed, setReversed] = useState(false); //exercise 4
   const [count, setCount] = useState(0); //exercise 5
   const [delayedCount, setDelayedCount] = useState(0); //exercise 5
+  const [endX, setEndX] = useState(0); //exercise 6
   const q1 = gsap.utils.selector(el2); //exercise 2
   const q2 = gsap.utils.selector(el3); //exercise 4
   const q3 = gsap.utils.selector(el4); //exercise 5
@@ -131,6 +138,10 @@ function GsapBegin() {
             <div className="box5 box5-2 blue">onLoad and delayed count change render</div>
             <div className="box5 box5-3 red">Every render</div>
           </div>
+        </div>
+        <div className="randomPage">
+          <button onClick={()=>setEndX(randomX())}>Radmom Now</button>
+          <Rect endX={endX}>{endX}</Rect>
         </div>
       </div>
     </div>
