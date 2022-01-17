@@ -2,6 +2,8 @@ import React, {useRef, useEffect, forwardRef, useState} from "react";
 import { gsap } from "gsap";
 import "./GsapBegin.css";
 
+const randomX = gsap.utils.random(-200, 200, 1, true);
+
 function Box({children}) {
   return <div className="box2">{children}</div>;
 }
@@ -26,17 +28,24 @@ function Circle1({children}) {
   return <div className="circle1"><div className="circletxt1">{children}</div></div>
 }
 
-function GsapBegin() {
-  const el1 = useRef();
-  const el2 = useRef();
-  const el3 = useRef();
-  const sqr1 = useRef();
-  const sqr2 = useRef();
-  const tl1 = useRef();
-  const [reversed, setReversed] = useState(false);
+function Rect({children, endX}) {
+  const rectRef = useRef();
+}
 
-  const q1 = gsap.utils.selector(el2);
-  const q2 = gsap.utils.selector(el3);
+function GsapBegin() {
+  const el1 = useRef(); //exercise 1
+  const el2 = useRef(); //exercise 2
+  const el3 = useRef(); //exercise 4
+  const el4 = useRef(); //exercise 5
+  const sqr1 = useRef(); //exercise 3
+  const sqr2 = useRef(); //exervise 3
+  const tl1 = useRef(); //exercise 4
+  const [reversed, setReversed] = useState(false); //exercise 4
+  const [count, setCount] = useState(0); //exercise 5
+  const [delayedCount, setDelayedCount] = useState(0); //exercise 5
+  const q1 = gsap.utils.selector(el2); //exercise 2
+  const q2 = gsap.utils.selector(el3); //exercise 4
+  const q3 = gsap.utils.selector(el4); //exercise 5
 
   useEffect(() => {
     gsap.to(el1.current, { rotation: "+=360" });
@@ -68,12 +77,28 @@ function GsapBegin() {
         x: 100
       });
     
+    gsap.to(q3(".box5-1"), {rotation: "+=360"});  
   },[]);
   
   useEffect(()=>{
     tl1.current.reversed(reversed);
   },[reversed]);
   
+  useEffect(()=>{
+    gsap.to(q3(".box5-2"), {rotation: "+=360"});
+  }, [delayedCount]);
+
+  useEffect(()=>{
+    gsap.to(q3(".box5-3"), {rotation: "+=360"});
+  })
+
+  useEffect(()=>{
+    const timer = setTimeout(()=>{
+      setDelayedCount(count);
+    }, 1000);
+    return()=>clearTimeout(timer);
+  }, [count])
+
   return (
     <div className="gsapBody">
       <div className="gsapPage">
@@ -93,6 +118,19 @@ function GsapBegin() {
           </div>
           <Cube1>cube</Cube1>
           <Circle1>circle</Circle1>
+        </div>
+        <div className="cube3" ref={el4}>
+          <div>
+            <button onClick={()=>setCount(count + 1)}>Click for render</button>
+          </div>
+          <p>Count: {count}</p>
+          <p>Delayed Count: {delayedCount}</p>
+          <p>Renders: {1 + delayedCount + count}</p>
+          <div className="flex-row">
+            <div className="box5 box5-1 purple">onLoad render</div>
+            <div className="box5 box5-2 blue">onLoad and delayed count change render</div>
+            <div className="box5 box5-3 red">Every render</div>
+          </div>
         </div>
       </div>
     </div>
