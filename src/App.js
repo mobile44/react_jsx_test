@@ -11,10 +11,10 @@ import Home from './Home';
 import ViewPort from "./ViewPort";
 import GsapBegin from "./GsapBegin";
 
-const fburl = "https://www.facebook.com/Google/";
-const linkedinurl = "https://www.linkedin.com/company/google";
-const twitterurl = "https://twitter.com/google";
-const instagramurl = "https://twitter.com/google";
+const fburl = "https://www.facebook.com/react/";
+const linkedinurl = "https://www.linkedin.com/company/react";
+const twitterurl = "https://twitter.com/react";
+const instagramurl = "https://www.instagram.com/reactjsofficial/";
 
 const App=()=>{
   const [toggleMenu, setToggleMenu] = useState(false);

@@ -106,6 +106,14 @@ function GsapBegin() {
     return()=>clearTimeout(timer);
   }, [count])
 
+  const onEnter = ({currentTarget})=> {
+    gsap.to(currentTarget, {backgroundColor: "#e77614", scale: 1.2});
+  }
+
+  const onLeave = ({currentTarget})=>{
+    gsap.to(currentTarget, {backgroundColor: "#28a92b", scale: 1});
+  }
+
   return (
     <div className="gsapBody">
       <div className="gsapPage">
@@ -142,6 +150,9 @@ function GsapBegin() {
         <div className="randomPage">
           <button onClick={()=>setEndX(randomX())}>Radmom Now</button>
           <Rect endX={endX}>{endX}</Rect>
+        </div>
+        <div className="enLarge">
+          <div className="box7" onMouseEnter={onEnter} onMouseLeave={onLeave}>Point Me</div>
         </div>
       </div>
     </div>
