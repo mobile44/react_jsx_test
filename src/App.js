@@ -10,6 +10,7 @@ import minlogo from './images/minlogo.jpg';
 import Home from './Home';
 import ViewPort from "./ViewPort";
 import GsapBegin from "./GsapBegin";
+import FadeEffect from "./FadeEffect";
 
 const fburl = "https://www.facebook.com/react/";
 const linkedinurl = "https://www.linkedin.com/company/react";
@@ -69,7 +70,7 @@ const App=()=>{
                 <Link className="flat" to="/react_jsx_test/" >Products</Link>
                 <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
                 <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
-                <Link className="flat" to="/react_jsx_test/" >About Us</Link>
+                <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade Effect</Link>
                 <div className="dropDown">
                   <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
                   <div className="dropDownContent">
@@ -123,7 +124,7 @@ const App=()=>{
                   <Link className="flat" to="/react_jsx_test/" >Products</Link>
                   <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
                   <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
-                  <Link className="flat" to="/react_jsx_test/" >About Us</Link>
+                  <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade Effect</Link>
                   <div className="dropDown">
                     <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
                     <div className="dropDownContent">
@@ -145,6 +146,7 @@ const App=()=>{
         <Route path="/react_jsx_test/" element={<Home />} />
         <Route path="/react_jsx_test/viewport" element={<ViewPort />} />
         <Route path="/react_jsx_test/gsapbegin" element={<GsapBegin />} />
+        <Route path="/react_jsx_test/fadeeffect" element={<FadeEffect />} />
       </Routes>
     </BrowserRouter>
   );

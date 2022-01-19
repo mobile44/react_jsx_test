@@ -33,12 +33,12 @@ function Rect({children, endX}) {
   useEffect(()=>{
     gsap.to(rectRef.current, {
       x: endX,
-      duration: 3,
+      duration: 4,
     });
   },[endX])
   return <div className="box6" ref={rectRef}>{children}</div>;
 }
-
+/*
 function fetchFakeData() {
   return new Promise(resolve => {
     setTimeout(()=>{
@@ -50,19 +50,20 @@ function fetchFakeData() {
     }, 2000);
   });
 }
-
+*/
+/*
 function Block({children, color}) {
   return (
     <div className={`box8 ${color}`}>{children}</div>
   );
 }
-
+*/
 function GsapBegin() {
   const el1 = useRef(); //exercise 1
   const el2 = useRef(); //exercise 2
   const el3 = useRef(); //exercise 4
   const el4 = useRef(); //exercise 5
-  const el5 = useRef(); //exercise 8
+  //const el5 = useRef(); //exercise 8
   const sqr1 = useRef(); //exercise 3
   const sqr2 = useRef(); //exervise 3
   const tl1 = useRef(); //exercise 4
@@ -70,12 +71,12 @@ function GsapBegin() {
   const [count, setCount] = useState(0); //exercise 5
   const [delayedCount, setDelayedCount] = useState(0); //exercise 5
   const [endX, setEndX] = useState(0); //exercise 6
-  const [data, setData] = useState([]); //exercise 8
-  const [loadingState, setLoadingState] = useState(); //exercise 8
+  //const [data, setData] = useState([]); //exercise 8
+  //const [loadingState, setLoadingState] = useState(); //exercise 8
   const q1 = gsap.utils.selector(el2); //exercise 2
   const q2 = gsap.utils.selector(el3); //exercise 4
   const q3 = gsap.utils.selector(el4); //exercise 5
-  const q4 = gsap.utils.selector(el5); //exercise 8
+  //const q4 = gsap.utils.selector(el5); //exercise 8
 
   useEffect(() => {
     gsap.to(el1.current, { rotation: "+=360" });
@@ -128,7 +129,7 @@ function GsapBegin() {
     }, 1000);
     return()=>clearTimeout(timer);
   }, [count])
-
+  /*
   useEffect(()=>{
     if (loadingState !== "start") return;
       const loadData = async()=>{
@@ -149,7 +150,7 @@ function GsapBegin() {
         stagger: 0.2,
       });
   }, [loadingState]);
-
+  */
   const onEnter = ({currentTarget})=> {
     gsap.to(currentTarget, {backgroundColor: "#e77614", scale: 1.2});
   }
@@ -157,13 +158,13 @@ function GsapBegin() {
   const onLeave = ({currentTarget})=>{
     gsap.to(currentTarget, {backgroundColor: "#28a92b", scale: 1});
   }
-
+  /*
   const startLoading = () => {
     if (!loadingState) {
       setLoadingState("start");
     }
   };
-
+  */
   return (
     <div className="gsapBody">
       <div className="gsapPage">
@@ -204,6 +205,7 @@ function GsapBegin() {
         <div className="enLarge">
           <div className="box7" onMouseEnter={onEnter} onMouseLeave={onLeave}>Point Me</div>
         </div>
+        {/*
         <div className="panel flex-row" ref={el5}>
           {
             !loadingState
@@ -219,6 +221,7 @@ function GsapBegin() {
             data.map(item=><Block key={item.id} {...item}>Block {item.id}</Block>)
           }
         </div>
+        */}
       </div>
     </div>
   );

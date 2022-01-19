@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+
+:root {
+  --bkColor: #4e4141;
+  --light: rgb(241, 229, 229);
+  --green: #28a92b;
+}
+
+.fadeBody {
+  background-color: var(--bkColor);
+  color: var(--light);
+  font-family: "Signika Negative", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.fadePage {
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.fadePanel {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.fadeToggle {
+  border: none;
+  padding: 15px 30px;
+  background-color: #033f04;
+  color:rgb(208, 230, 159)
+}
+
+.fadeToggle:hover {
+  font-weight: bold;
+  color:rgb(235, 237, 241);
+  background-color: rgb(6, 20, 61);
+}
+
+.box8 {
+  /*width: 100px;
+  height: 100px;*/
+  padding: 70px 70px;
+  border-radius: 12px;
+  display: inline-block;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  text-align: center;
+  background-color:#045e05;
+  font-weight: 600;
+  /*color:rgb(233, 22, 22);*/
+  margin: 10px 20px;
+}
+
+.box8-blue {
+  color: rgb(134, 134, 243);
+}
+
+.box8-red {
+  color: rgb(240, 150, 150);
+}
+
+.box8-purple {
+  color: rgb(233, 155, 233);
+}
