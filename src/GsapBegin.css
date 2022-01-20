@@ -6,7 +6,7 @@
   --green: #28a92b;
 }
 
-.gsapBody {
+.gsapBody1 {
   background-color: var(--dark);
   color: var(--light);
   font-family: "Signika Negative", sans-serif;
@@ -59,6 +59,7 @@
     font-weight: 600;
     color: var(--light);
   }
+  /*
   .cube > * + * {
     margin-top: 1rem;
   }
@@ -88,6 +89,7 @@
     width: 100%;
     text-align: center;
   }
+  */
 .cube3 {
   /*padding: 1px;*/
   width: 100%;
@@ -128,6 +130,7 @@
   font-weight: 600;
   color: var(--light);
 }
+/*
 .box7 {
   width: 100px;
   height: 100px;
@@ -140,6 +143,7 @@
   font-weight: 600;
   color: var(--light);
 }
+*/
 /*
 .box8 {
   width: 100px;

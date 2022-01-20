@@ -10,6 +10,9 @@ import minlogo from './images/minlogo.jpg';
 import Home from './Home';
 import ViewPort from "./ViewPort";
 import GsapBegin from "./GsapBegin";
+import TimeLine from "./TimeLine";
+import Enlarge from "./Enlarge";
+import Random from "./Random";
 import FadeEffect from "./FadeEffect";
 
 const fburl = "https://www.facebook.com/react/";
@@ -57,9 +60,9 @@ const App=()=>{
               <div className="topMenuRight">
                 <Link className="link" to="/react_jsx_test/viewport" >ViewPort Effect</Link>
                 <Link className="link" to="/react_jsx_test/gsapbegin" >GSAP Begin</Link>
-                <Link className="link" to="/react_jsx_test/" >In the News</Link>
-                <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
-                <Link className="link" to="/react_jsx_test/" >Contact</Link>
+                <Link className="link" to="/react_jsx_test/timeline" >Timeline Effect</Link>
+                <Link className="link" to="/react_jsx_test/enlarge" >Enlarge Effect</Link>
+                <Link className="link" to="/react_jsx_test/random" >Random Effect</Link>
               </div>
             </div>
             <div className="subMenu">
@@ -115,9 +118,9 @@ const App=()=>{
                 <div className="firstBar">
                   <Link className="link" to="/react_jsx_test/viewport" >ViewPort effect</Link>
                   <Link className="link" to="/react_jsx_test/gsapbegin" >GSAP Begin</Link>
-                  <Link className="link" to="/react_jsx_test/" >In the News</Link>
-                  <Link className="link" to="/react_jsx_test/" >Order Forms</Link>
-                  <Link className="link" to="/react_jsx_test/" >Contact</Link>
+                  <Link className="link" to="/react_jsx_test/timeline" >Timeline Effect</Link>
+                  <Link className="link" to="/react_jsx_test/enlarge" >Enlarge Effect</Link>
+                  <Link className="link" to="/react_jsx_test/random" >Random Effect</Link>
                   
                 </div>
                 <div className="secondBar">
@@ -146,6 +149,9 @@ const App=()=>{
         <Route path="/react_jsx_test/" element={<Home />} />
         <Route path="/react_jsx_test/viewport" element={<ViewPort />} />
         <Route path="/react_jsx_test/gsapbegin" element={<GsapBegin />} />
+        <Route path="/react_jsx_test/timeline" element={<TimeLine />} />
+        <Route path="/react_jsx_test/enlarge" element={<Enlarge />} />
+        <Route path="/react_jsx_test/random" element={<Random />} />
         <Route path="/react_jsx_test/fadeeffect" element={<FadeEffect />} />
       </Routes>
     </BrowserRouter>

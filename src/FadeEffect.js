@@ -10,7 +10,7 @@ const FadeIn = forwardRef(({ children, stagger = 0, x = 0 }, ref) => {
     animation.current = gsap.from(el.current.children, { 
       opacity: 0,
       stagger, 
-      x 
+      x, 
     });        
   }, []);
   
