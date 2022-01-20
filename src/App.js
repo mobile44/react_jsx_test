@@ -58,11 +58,11 @@ const App=()=>{
                 <img src={instagram} alt='instagram' width="30" height="30"/>
               </a>
               <div className="topMenuRight">
-                <Link className="link" to="/react_jsx_test/viewport" >ViewPort Effect</Link>
-                <Link className="link" to="/react_jsx_test/gsapbegin" >GSAP Begin</Link>
-                <Link className="link" to="/react_jsx_test/timeline" >Timeline Effect</Link>
-                <Link className="link" to="/react_jsx_test/enlarge" >Enlarge Effect</Link>
-                <Link className="link" to="/react_jsx_test/random" >Random Effect</Link>
+                <Link className="link" to="/react_jsx_test/viewport" >ViewPort</Link>
+                <Link className="link" to="/react_jsx_test/gsapbegin" >GSAP</Link>
+                <Link className="link" to="/react_jsx_test/timeline" >Timeline</Link>
+                <Link className="link" to="/react_jsx_test/enlarge" >Enlarge</Link>
+                <Link className="link" to="/react_jsx_test/random" >Random</Link>
               </div>
             </div>
             <div className="subMenu">
@@ -73,7 +73,7 @@ const App=()=>{
                 <Link className="flat" to="/react_jsx_test/" >Products</Link>
                 <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
                 <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
-                <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade Effect</Link>
+                <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade</Link>
                 <div className="dropDown">
                   <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
                   <div className="dropDownContent">
@@ -116,11 +116,11 @@ const App=()=>{
             {(toggleMenu) && (
               <div>
                 <div className="firstBar">
-                  <Link className="link" to="/react_jsx_test/viewport" >ViewPort effect</Link>
-                  <Link className="link" to="/react_jsx_test/gsapbegin" >GSAP Begin</Link>
-                  <Link className="link" to="/react_jsx_test/timeline" >Timeline Effect</Link>
-                  <Link className="link" to="/react_jsx_test/enlarge" >Enlarge Effect</Link>
-                  <Link className="link" to="/react_jsx_test/random" >Random Effect</Link>
+                  <Link className="link" to="/react_jsx_test/viewport" >ViewPort</Link>
+                  <Link className="link" to="/react_jsx_test/gsapbegin" >GSAP</Link>
+                  <Link className="link" to="/react_jsx_test/timeline" >Timeline</Link>
+                  <Link className="link" to="/react_jsx_test/enlarge" >Enlarge</Link>
+                  <Link className="link" to="/react_jsx_test/random" >Random</Link>
                   
                 </div>
                 <div className="secondBar">

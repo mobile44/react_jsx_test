@@ -2,7 +2,7 @@ import React, {useRef, useEffect, useState} from "react";
 import { gsap } from "gsap";
 import "./GsapBegin.css";
 
-const randomX = gsap.utils.random(-150, 150, 1, true);
+const randomX = gsap.utils.random(-100, 100, 1, true);
 
 function Rect({children, endX}) {
   const rectRef = useRef();

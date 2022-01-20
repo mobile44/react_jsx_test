@@ -49,44 +49,5 @@
   top: 40%;
   width: 100%;
   text-align: center;
+  color: var(--dark);
 }
-/*
-.cube > * + * {
-  margin-top: 1rem;
-}
-.cube {
-  text-align: center;
-}
-.toggle {
-  border: none;
-  padding: 15px 30px;
-  background-color: var(--green);
-  color:rgb(208, 230, 159)
-}
-.box4 {
-  width: 100px;
-  height: 100px;
-  border-radius: 12px;
-  display: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color:rgb(212, 43, 13);
-  font-weight: 600;
-  color: var(--light);
-}
-.circle1 {
-  height: 100px;
-  width: 100px;
-  background-color: rgb(212, 43, 13);
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-}
-.circletxt1 {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-}
-*/
