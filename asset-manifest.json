@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react_jsx_test/static/css/main.823c6cd6.chunk.css",
-    "main.js": "/react_jsx_test/static/js/main.28df44c2.chunk.js",
-    "main.js.map": "/react_jsx_test/static/js/main.28df44c2.chunk.js.map",
-    "runtime-main.js": "/react_jsx_test/static/js/runtime-main.48de35c6.js",
-    "runtime-main.js.map": "/react_jsx_test/static/js/runtime-main.48de35c6.js.map",
-    "static/js/2.023ffadd.chunk.js": "/react_jsx_test/static/js/2.023ffadd.chunk.js",
-    "static/js/2.023ffadd.chunk.js.map": "/react_jsx_test/static/js/2.023ffadd.chunk.js.map",
-    "static/js/3.f50b016c.chunk.js": "/react_jsx_test/static/js/3.f50b016c.chunk.js",
-    "static/js/3.f50b016c.chunk.js.map": "/react_jsx_test/static/js/3.f50b016c.chunk.js.map",
+    "main.css": "/react_jsx_test/static/css/main.0bcea5a4.chunk.css",
+    "main.js": "/react_jsx_test/static/js/main.834fd8a2.chunk.js",
+    "main.js.map": "/react_jsx_test/static/js/main.834fd8a2.chunk.js.map",
+    "runtime-main.js": "/react_jsx_test/static/js/runtime-main.38e3a962.js",
+    "runtime-main.js.map": "/react_jsx_test/static/js/runtime-main.38e3a962.js.map",
+    "static/js/2.b7667fdc.chunk.js": "/react_jsx_test/static/js/2.b7667fdc.chunk.js",
+    "static/js/2.b7667fdc.chunk.js.map": "/react_jsx_test/static/js/2.b7667fdc.chunk.js.map",
+    "static/js/3.33c50b40.chunk.js": "/react_jsx_test/static/js/3.33c50b40.chunk.js",
+    "static/js/3.33c50b40.chunk.js.map": "/react_jsx_test/static/js/3.33c50b40.chunk.js.map",
     "index.html": "/react_jsx_test/index.html",
-    "static/css/main.823c6cd6.chunk.css.map": "/react_jsx_test/static/css/main.823c6cd6.chunk.css.map",
-    "static/js/2.023ffadd.chunk.js.LICENSE.txt": "/react_jsx_test/static/js/2.023ffadd.chunk.js.LICENSE.txt",
+    "static/css/main.0bcea5a4.chunk.css.map": "/react_jsx_test/static/css/main.0bcea5a4.chunk.css.map",
+    "static/js/2.b7667fdc.chunk.js.LICENSE.txt": "/react_jsx_test/static/js/2.b7667fdc.chunk.js.LICENSE.txt",
     "static/media/lightblub01.3c0900d9.jpg": "/react_jsx_test/static/media/lightblub01.3c0900d9.jpg",
     "static/media/lightblub02.d4cd8006.jpg": "/react_jsx_test/static/media/lightblub02.d4cd8006.jpg",
     "static/media/square_cloudy.9b7a9c1c.jpg": "/react_jsx_test/static/media/square_cloudy.9b7a9c1c.jpg",
@@ -24,9 +24,9 @@
     "static/media/square_sunshine_tree.351086ce.jpg": "/react_jsx_test/static/media/square_sunshine_tree.351086ce.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.48de35c6.js",
-    "static/js/2.023ffadd.chunk.js",
-    "static/css/main.823c6cd6.chunk.css",
-    "static/js/main.28df44c2.chunk.js"
+    "static/js/runtime-main.38e3a962.js",
+    "static/js/2.b7667fdc.chunk.js",
+    "static/css/main.0bcea5a4.chunk.css",
+    "static/js/main.834fd8a2.chunk.js"
   ]
 }
