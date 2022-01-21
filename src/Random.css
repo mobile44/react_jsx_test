@@ -1,0 +1,42 @@
+:root {
+    --dark: #1d1d1d;
+    --light: #fff;
+    --green: #28a92b;
+  }
+  .randomBody {
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: "Signika Negative", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .randomPage {
+    /*background: yellowgreen;*/
+    width: 100%;
+    display: flex;
+    flex-direction: wrap;
+    justify-items: center;
+  }
+
+  .randomSection {
+    width: 30%;
+    height: 190px;
+    margin: auto;
+    /*padding: 5px;*/
+    /*background: blue;*/
+    color: white;
+    text-align: center;
+  }
+  .randomToggle {
+    margin: auto;
+    padding: 20px 30px;
+    border: none;
+    background-color: var(--green);
+    color:rgb(208, 230, 159)
+  }
+  .box6 {
+    background: cornflowerblue;
+    padding: 40px 0;
+  }
+  
