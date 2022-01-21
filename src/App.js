@@ -13,6 +13,7 @@ import GsapBegin from "./GsapBegin";
 import TimeLine from "./TimeLine";
 import Enlarge from "./Enlarge";
 import Random from "./Random";
+import Render from "./Render";
 import FadeEffect from "./FadeEffect";
 
 const fburl = "https://www.facebook.com/react/";
@@ -70,7 +71,7 @@ const App=()=>{
                 <img src={logo} alt='logo' height="75"/>
               </a>
               <div className="subMenuRight">
-                <Link className="flat" to="/react_jsx_test/" >Products</Link>
+                <Link className="flat" to="/react_jsx_test/render" >Render</Link>
                 <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
                 <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
                 <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade</Link>
@@ -124,7 +125,7 @@ const App=()=>{
                   
                 </div>
                 <div className="secondBar">
-                  <Link className="flat" to="/react_jsx_test/" >Products</Link>
+                  <Link className="flat" to="/react_jsx_test/render" >Render</Link>
                   <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
                   <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
                   <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade Effect</Link>
@@ -152,6 +153,7 @@ const App=()=>{
         <Route path="/react_jsx_test/timeline" element={<TimeLine />} />
         <Route path="/react_jsx_test/enlarge" element={<Enlarge />} />
         <Route path="/react_jsx_test/random" element={<Random />} />
+        <Route path="/react_jsx_test/render" element={<Render />} />
         <Route path="/react_jsx_test/fadeeffect" element={<FadeEffect />} />
       </Routes>
     </BrowserRouter>

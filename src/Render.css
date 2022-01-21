@@ -1,0 +1,70 @@
+:root {
+    --dark: #1d1d1d;
+    --light: #fff;
+    --green: #28a92b;
+  }
+  .renderBody {
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: "Signika Negative", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .renderPage {
+    width: 100%;
+    display: flex;
+    flex-direction: wrap;
+    justify-items: center;
+  }
+  .renderSection {
+    width: 100%;
+    text-align: center;
+  }
+  .renderToggle {
+    margin: auto;
+    padding: 20px 30px;
+    border: none;
+    background-color:rgb(235, 11, 11);
+    color:rgb(208, 230, 159)
+  }
+  .boxSection {
+    text-align:center;
+  }
+  .renderBox {
+    display: inline-block;
+    padding: 30px 30px;
+  }
+  .renderBox-1 {
+    background: purple;
+  }
+  .renderBox-2 {
+    background: green;
+    /*margin-left:20px;*/
+  }
+  .renderBox-3 {
+    background: navy;
+    /*margin-left:20px;*/
+  }
+  /*
+  .flex-row {
+    display: inline-flex;
+  }
+  .box5 {
+    padding: 50px 0px;
+    text-align: center;
+    text-justify: auto;
+    margin: 10px;
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
+  .box5-1 {
+    background-color: purple;
+  }
+  .box5-2 {
+    background-color: green;
+  }
+  .box5-3 {
+    background-color: navy;
+  }
+  */

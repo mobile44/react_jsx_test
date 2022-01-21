@@ -12,7 +12,7 @@
   font-family: "Signika Negative", sans-serif;
   margin: 0;
   padding: 0;
-  height: 300vh;
+  height: 100vh;
 }
 
 .gsapPage {
@@ -90,8 +90,9 @@
     text-align: center;
   }
   */
+/*
 .cube3 {
-  /*padding: 1px;*/
+  padding: 1px;
   width: 100%;
   text-align: center;
 }
@@ -115,6 +116,7 @@
 .box5-3 {
   background-color: navy;
 }
+*/
 /*
 .randomPage {
   padding: 0 43%;

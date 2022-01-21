@@ -63,20 +63,20 @@ function GsapBegin() {
   const el1 = useRef(); //exercise 1
   const el2 = useRef(); //exercise 2
   //const el3 = useRef(); //exercise 4
-  const el4 = useRef(); //exercise 5
+  //const el4 = useRef(); //exercise 5
   //const el5 = useRef(); //exercise 8
   const sqr1 = useRef(); //exercise 3
   const sqr2 = useRef(); //exervise 3
   //const tl1 = useRef(); //exercise 4
   //const [reversed, setReversed] = useState(false); //exercise 4
-  const [count, setCount] = useState(0); //exercise 5
-  const [delayedCount, setDelayedCount] = useState(0); //exercise 5
+  //const [count, setCount] = useState(0); //exercise 5
+  //const [delayedCount, setDelayedCount] = useState(0); //exercise 5
   //const [endX, setEndX] = useState(0); //exercise 6
   //const [data, setData] = useState([]); //exercise 8
   //const [loadingState, setLoadingState] = useState(); //exercise 8
   const q1 = gsap.utils.selector(el2); //exercise 2
   //const q2 = gsap.utils.selector(el3); //exercise 4
-  const q3 = gsap.utils.selector(el4); //exercise 5
+  //const q3 = gsap.utils.selector(el4); //exercise 5
   //const q4 = gsap.utils.selector(el5); //exercise 8
 
   useEffect(() => {
@@ -109,27 +109,30 @@ function GsapBegin() {
         x: 100
       });
     */
-    gsap.to(q3(".box5-1"), {rotation: "+=360"});  
+    //gsap.to(q3(".box5-1"), {rotation: "+=360"});  
   },[]);
   /*
   useEffect(()=>{
     tl1.current.reversed(reversed);
   },[reversed]);
   */
+  /*
   useEffect(()=>{
     gsap.to(q3(".box5-2"), {rotation: "+=360"});
   }, [delayedCount]);
-
+  
   useEffect(()=>{
     gsap.to(q3(".box5-3"), {rotation: "+=360"});
   })
-
+  */
+  /*
   useEffect(()=>{
     const timer = setTimeout(()=>{
       setDelayedCount(count);
     }, 1000);
     return()=>clearTimeout(timer);
   }, [count])
+  */
   /*
   useEffect(()=>{
     if (loadingState !== "start") return;
@@ -190,6 +193,7 @@ function GsapBegin() {
           <Circle1>circle</Circle1>
         </div>
         */}
+        {/*
         <div className="cube3" ref={el4}>
           <div>
             <button onClick={()=>setCount(count + 1)}>Click for render</button>
@@ -203,6 +207,7 @@ function GsapBegin() {
             <div className="box5 box5-3 red">Every render</div>
           </div>
         </div>
+        */}
         {/*
         <div className="randomPage">
           <button onClick={()=>setEndX(randomX())}>Radmom Now</button>
