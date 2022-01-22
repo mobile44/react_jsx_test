@@ -3,7 +3,7 @@
   --light: #fff;
   --green: #28a92b;
 }
-.gsapBody {
+.timelineBody {
   background-color: var(--dark);
   color: var(--light);
   font-family: "Signika Negative", sans-serif;
@@ -11,7 +11,7 @@
   padding: 0;
   height: 100vh;
 } 
-.gsapPage {
+.timelinePage {
   /*display: flex;*/
   /*align-items: center;*/
   /*justify-content: center;*/

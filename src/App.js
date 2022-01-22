@@ -14,6 +14,8 @@ import TimeLine from "./TimeLine";
 import Enlarge from "./Enlarge";
 import Random from "./Random";
 import Render from "./Render";
+import Distance from "./Distance";
+import Follow from "./Follow";
 import FadeEffect from "./FadeEffect";
 
 const fburl = "https://www.facebook.com/react/";
@@ -72,8 +74,8 @@ const App=()=>{
               </a>
               <div className="subMenuRight">
                 <Link className="flat" to="/react_jsx_test/render" >Render</Link>
-                <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
-                <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
+                <Link className="flat" to="/react_jsx_test/distance" >Distance</Link>
+                <Link className="flat" to="/react_jsx_test/follow" >Follow</Link>
                 <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade</Link>
                 <div className="dropDown">
                   <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
@@ -126,8 +128,8 @@ const App=()=>{
                 </div>
                 <div className="secondBar">
                   <Link className="flat" to="/react_jsx_test/render" >Render</Link>
-                  <Link className="flat" to="/react_jsx_test/" >Real Stores</Link>
-                  <Link className="flat" to="/react_jsx_test/" >Services&amp;Support</Link>
+                  <Link className="flat" to="/react_jsx_test/distance" >Distance</Link>
+                  <Link className="flat" to="/react_jsx_test/follow" >Follow</Link>
                   <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade Effect</Link>
                   <div className="dropDown">
                     <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
@@ -154,6 +156,8 @@ const App=()=>{
         <Route path="/react_jsx_test/enlarge" element={<Enlarge />} />
         <Route path="/react_jsx_test/random" element={<Random />} />
         <Route path="/react_jsx_test/render" element={<Render />} />
+        <Route path="/react_jsx_test/distance" element={<Distance />} />
+        <Route path="/react_jsx_test/follow" element={<Follow />} />
         <Route path="/react_jsx_test/fadeeffect" element={<FadeEffect />} />
       </Routes>
     </BrowserRouter>

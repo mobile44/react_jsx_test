@@ -29,8 +29,8 @@ function TimeLine() {
     tl1.current.reversed(reversed);
   },[reversed]);
   return (
-    <div className="gsapBody">
-      <div className="gsapPage">
+    <div className="timelineBody">
+      <div className="timelinePage">
         <div className="timelineBlock" ref={el3}>
           <div className="buttonBlock">
             <button className="toggle" onClick={()=>setReversed(!reversed)}>Toggle</button>

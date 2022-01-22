@@ -3,7 +3,7 @@
     --light: #fff;
     --green: #28a92b;
   }
-  .gsapBody {
+  .enlargeBody {
     background-color: var(--dark);
     color: var(--light);
     font-family: "Signika Negative", sans-serif;
@@ -11,18 +11,18 @@
     padding: 0;
     height: 100vh;
   } 
-  .gsapPage {
+  .enlargePage {
+    padding-top: 20px;
     /*display: inline-block;*/
     /*justify-content: center;*/
     /*min-height: 100vh;*/
     /*padding: 10px;*/
     /*display: inline-block;*/
   }
-  .box7 {
+  .enlargeBox {
     text-align: center;
     margin: 0 40%;
     padding: 30px 20px;
     background-color: #28a92b;
     border-radius: 10%;
-    color: white;
   }
