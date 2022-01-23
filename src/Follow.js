@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState, forwardRef, useImperativeHandle} from "react";
+import React, {useEffect, useRef, forwardRef, useImperativeHandle} from "react";
 import {gsap} from "gsap";
 import "./Follow.css";
 
@@ -14,7 +14,7 @@ const Circle = forwardRef(({ size, delay }, ref) => {
         }
       };
   }, [delay]);
-    return <div className={`followCircle ${size}`} ref={el}></div>;
+  return <div className={`followCircle ${size}`} ref={el}></div>;
 });
 function Follow() {
   const circleRefs = useRef([]);

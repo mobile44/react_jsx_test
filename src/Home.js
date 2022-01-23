@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, forwardRef, useRef} from 'react';
 import SliderContent from './SliderContent';
 import Dots from './Dots';
 import Arrows from './Arrows';
@@ -7,8 +7,11 @@ import "./Home.css";
 import Jumping from "./Jumping";
 import Scrolling from "./Scrolling";
 
-
 const len = sliderImage.length - 1;
+
+const NameInput = forwardRef(({ children}, ref) => {
+  return <input ref={ref} {...children} type="text"/>;
+});
 
 function Home(props) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -30,6 +33,11 @@ function Home(props) {
     } else {
       setIsActive(false);
     }
+  }
+
+  const myRef = useRef(null);
+  const handleClick=()=>{
+    myRef.current.focus();
   }
 
   return (
@@ -58,6 +66,12 @@ function Home(props) {
           <label className={isActive?"Active":""} htmlFor="email">
             E-mail
           </label>
+      </div>
+      <div>
+        <NameInput ref={myRef}/>
+        <button onClick={handleClick}>
+          click here
+        </button>
       </div>
       <div className="lightShades">
         <Scrolling/>
