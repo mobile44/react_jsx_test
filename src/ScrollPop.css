@@ -1,0 +1,89 @@
+:root {
+  --dark: #1d1d1d;
+  --light: #fff;
+  --green: #28a92b;
+}
+.scrollpopBody {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "Signika Negative", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 300vh;
+}
+.scrollpopPage {
+  width: 100%;
+  /*display: flex;*/
+  flex-direction: wrap;
+  justify-items: center;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.scrollpopFirst {
+  width: auto;
+  height: 500px;
+  /*background-color: #fdfffc;*/
+  /*margin-top: 30px;*/
+}
+.scrollpopSecond {
+  width: auto;
+  height: 400px;
+  /*background-color: #e0fbfc;*/
+}
+.scrollpopThird {
+  width: auto;
+  height: 400px;
+  /*background-color: #fdfffc;*/
+}
+.spf-line {
+  width: 100%;
+  max-width: 1400px;
+  height: 20px;
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  background-color: #58b1dd;
+}
+h1 {
+  text-align: center;
+  padding-top: 90px;
+  color: #023047;
+  font-size: 60px;
+}
+.spf-paragraph {
+  text-align: center;
+  color: #f1f6f8;
+  font-size: 20px;
+  font-weight: bold;
+}
+.img-main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#firt-image {
+  width: 500px;
+  height: 300px;
+  margin-top: 10px;
+}
+#second-image {
+  width: 500px;
+  height: 300px;
+  margin-top: 50px;
+  padding-right: 80px;
+}
+#third-image {
+  width: 500px;
+  height: 300px;
+}
+.sps-paragraph {
+  font-size: 30px;
+  margin-top: 40px;
+}
+.spt-paragraph {
+  font-size: 30px;
+  margin-top: 40px;
+}

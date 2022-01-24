@@ -2,11 +2,6 @@ import React, {useRef, useEffect, useState, forwardRef, useImperativeHandle} fro
 import { gsap } from "gsap";
 import "./Distance.css";
 
-/*
-function Box({children}) {
-  return <div className="distanceBox">{children}</div>;
-}
-*/
 const Box = forwardRef(({size, value},ref) => {
   const el = useRef();
       
@@ -16,7 +11,7 @@ const Box = forwardRef(({size, value},ref) => {
       return {
         moveTo(width) {
           gsap.fromTo(el.current, {x:0},{
-            x:width,
+            x:width-20,
             repeat:-1,
             duration: 4,
             stagger: 0.33,
@@ -29,16 +24,14 @@ const Box = forwardRef(({size, value},ref) => {
 });
 
 function Distance() {
-
   const el2 = useRef();
 
-  //const q1 = gsap.utils.selector(el2);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   useEffect(() => {
     setScreenWidth(window.innerWidth);
     el2.current.moveTo(screenWidth);
     const changeWidth = ({screenWidth}) => {
-      setScreenWidth(window.innerWidth); 
+      setScreenWidth(window.innerWidth);
       el2.current.moveTo(window.innerWidth);
     }
 
@@ -49,23 +42,8 @@ function Distance() {
     }
 
   }, []);
-  /*
-  useEffect(() => {
-    gsap.to(q1(".distanceBox"),{
-      x: screenWidth,
-      stagger: 0.33,
-      repeat: -1,
-      repeatDelay: 1,
-      duration: 4,
-      yoyo: true,
-    });
-
-  },[screenWidth]);
-  */
   
   return (
-    
-
     <div className="distanceBody">
       <div className="distancePage">
         <div className="distanceSection">
@@ -73,8 +51,6 @@ function Distance() {
         </div>
       </div>
     </div>
-
-    
   );
 }
 export default Distance;

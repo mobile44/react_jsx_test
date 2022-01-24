@@ -17,6 +17,8 @@ import Render from "./Render";
 import Distance from "./Distance";
 import Follow from "./Follow";
 import FadeEffect from "./FadeEffect";
+import Scroll from "./Scroll";
+import ScrollPop from "./ScrollPop";
 
 const fburl = "https://www.facebook.com/react/";
 const linkedinurl = "https://www.linkedin.com/company/react";
@@ -78,10 +80,10 @@ const App=()=>{
                 <Link className="flat" to="/react_jsx_test/follow" >Follow</Link>
                 <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade</Link>
                 <div className="dropDown">
-                  <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
+                  <Link className="dropBTN" to="/react_jsx_test/" >Scrolls &dArr;</Link>
                   <div className="dropDownContent">
-                    <Link className="dropPoint" to="/react_jsx_test/">R 1</Link>
-                    <Link className="dropPoint" to="/react_jsx_test/">R 2</Link>
+                    <Link className="dropPoint" to="/react_jsx_test/scroll">Scroll</Link>
+                    <Link className="dropPoint" to="/react_jsx_test/scrollpop">ScrollPop</Link>
                     <Link className="dropPoint" to="/react_jsx_test/">R 3</Link>
                   </div>
                 </div>
@@ -132,10 +134,10 @@ const App=()=>{
                   <Link className="flat" to="/react_jsx_test/follow" >Follow</Link>
                   <Link className="flat" to="/react_jsx_test/fadeeffect" >Fade Effect</Link>
                   <div className="dropDown">
-                    <Link className="dropBTN" to="/react_jsx_test/" >Resources &dArr;</Link>
+                    <Link className="dropBTN" to="/react_jsx_test/" >Scrolls &dArr;</Link>
                     <div className="dropDownContent">
-                      <Link className="dropPoint" to="/react_jsx_test/">R 1</Link>
-                      <Link className="dropPoint" to="/react_jsx_test/">R 2</Link>
+                      <Link className="dropPoint" to="/react_jsx_test/scroll">Scroll</Link>
+                      <Link className="dropPoint" to="/react_jsx_test/scrollpop">ScrollPop</Link>
                       <Link className="dropPoint" to="/react_jsx_test/">R 3</Link>
                     </div>
                   </div>
@@ -159,6 +161,8 @@ const App=()=>{
         <Route path="/react_jsx_test/distance" element={<Distance />} />
         <Route path="/react_jsx_test/follow" element={<Follow />} />
         <Route path="/react_jsx_test/fadeeffect" element={<FadeEffect />} />
+        <Route path="/react_jsx_test/scroll" element={<Scroll />} />
+        <Route path="/react_jsx_test/scrollpop" element={<ScrollPop />} />
       </Routes>
     </BrowserRouter>
   );

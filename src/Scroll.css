@@ -1,0 +1,45 @@
+:root {
+  --dark: #1d1d1d;
+  --light: #fff;
+  --green: #28a92b;
+}
+.scrollBody {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "Signika Negative", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 150vh;
+}
+.scrollPage {
+  width: 100%;
+  /*display: flex;*/
+  flex-direction: wrap;
+  justify-items: center;
+}
+#firstCircle {
+  background-color: yellow;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border: 2px solid blue;
+  margin-bottom: 1%;
+}
+#secondCircle {
+  background-color: blue;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border: 2px solid yellow;
+  margin-bottom: 10%;
+} 
+#thirdCircle {
+  background-color: black;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 2px solid yellow;
+  margin-bottom: 80%;
+}
