@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/react_jsx_test/static/css/main.37992390.chunk.css",
-    "main.js": "/react_jsx_test/static/js/main.9419882d.chunk.js",
-    "main.js.map": "/react_jsx_test/static/js/main.9419882d.chunk.js.map",
-    "runtime-main.js": "/react_jsx_test/static/js/runtime-main.59ccede3.js",
-    "runtime-main.js.map": "/react_jsx_test/static/js/runtime-main.59ccede3.js.map",
+    "main.css": "/react_jsx_test/static/css/main.607ae0f3.chunk.css",
+    "main.js": "/react_jsx_test/static/js/main.a16e0280.chunk.js",
+    "main.js.map": "/react_jsx_test/static/js/main.a16e0280.chunk.js.map",
+    "runtime-main.js": "/react_jsx_test/static/js/runtime-main.a5772364.js",
+    "runtime-main.js.map": "/react_jsx_test/static/js/runtime-main.a5772364.js.map",
     "static/js/2.6e542c48.chunk.js": "/react_jsx_test/static/js/2.6e542c48.chunk.js",
     "static/js/2.6e542c48.chunk.js.map": "/react_jsx_test/static/js/2.6e542c48.chunk.js.map",
-    "static/js/3.22fefd02.chunk.js": "/react_jsx_test/static/js/3.22fefd02.chunk.js",
-    "static/js/3.22fefd02.chunk.js.map": "/react_jsx_test/static/js/3.22fefd02.chunk.js.map",
+    "static/js/3.da7f5530.chunk.js": "/react_jsx_test/static/js/3.da7f5530.chunk.js",
+    "static/js/3.da7f5530.chunk.js.map": "/react_jsx_test/static/js/3.da7f5530.chunk.js.map",
     "index.html": "/react_jsx_test/index.html",
-    "static/css/main.37992390.chunk.css.map": "/react_jsx_test/static/css/main.37992390.chunk.css.map",
+    "static/css/main.607ae0f3.chunk.css.map": "/react_jsx_test/static/css/main.607ae0f3.chunk.css.map",
     "static/js/2.6e542c48.chunk.js.LICENSE.txt": "/react_jsx_test/static/js/2.6e542c48.chunk.js.LICENSE.txt",
     "static/media/lightblub01.3c0900d9.jpg": "/react_jsx_test/static/media/lightblub01.3c0900d9.jpg",
     "static/media/lightblub02.d4cd8006.jpg": "/react_jsx_test/static/media/lightblub02.d4cd8006.jpg",
+    "static/media/nezuko.abbc62c9.jpg": "/react_jsx_test/static/media/nezuko.abbc62c9.jpg",
     "static/media/square_cloudy.9b7a9c1c.jpg": "/react_jsx_test/static/media/square_cloudy.9b7a9c1c.jpg",
     "static/media/square_cloudy_river.d1bbc539.jpg": "/react_jsx_test/static/media/square_cloudy_river.d1bbc539.jpg",
     "static/media/square_good_weather.b30ce1cb.jpg": "/react_jsx_test/static/media/square_good_weather.b30ce1cb.jpg",
@@ -21,12 +22,14 @@
     "static/media/square_sunset.3205d340.jpg": "/react_jsx_test/static/media/square_sunset.3205d340.jpg",
     "static/media/square_sunset_sky.888f1746.jpg": "/react_jsx_test/static/media/square_sunset_sky.888f1746.jpg",
     "static/media/square_sunset_tree.5562ae1d.jpg": "/react_jsx_test/static/media/square_sunset_tree.5562ae1d.jpg",
-    "static/media/square_sunshine_tree.351086ce.jpg": "/react_jsx_test/static/media/square_sunshine_tree.351086ce.jpg"
+    "static/media/square_sunshine_tree.351086ce.jpg": "/react_jsx_test/static/media/square_sunshine_tree.351086ce.jpg",
+    "static/media/tanjiro.6c4fd13a.jpg": "/react_jsx_test/static/media/tanjiro.6c4fd13a.jpg",
+    "static/media/zenitsu.95e49a2f.jpg": "/react_jsx_test/static/media/zenitsu.95e49a2f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.59ccede3.js",
+    "static/js/runtime-main.a5772364.js",
     "static/js/2.6e542c48.chunk.js",
-    "static/css/main.37992390.chunk.css",
-    "static/js/main.9419882d.chunk.js"
+    "static/css/main.607ae0f3.chunk.css",
+    "static/js/main.a16e0280.chunk.js"
   ]
 }
