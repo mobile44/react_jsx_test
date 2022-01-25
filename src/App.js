@@ -19,6 +19,7 @@ import Follow from "./Follow";
 import FadeEffect from "./FadeEffect";
 import Scroll from "./Scroll";
 import ScrollPop from "./ScrollPop";
+import ScrollImage from "./ScrollImage";
 
 const fburl = "https://www.facebook.com/react/";
 const linkedinurl = "https://www.linkedin.com/company/react";
@@ -84,7 +85,7 @@ const App=()=>{
                   <div className="dropDownContent">
                     <Link className="dropPoint" to="/react_jsx_test/scroll">Scroll</Link>
                     <Link className="dropPoint" to="/react_jsx_test/scrollpop">ScrollPop</Link>
-                    <Link className="dropPoint" to="/react_jsx_test/">R 3</Link>
+                    <Link className="dropPoint" to="/react_jsx_test/scrollimage">ScrollImage</Link>
                   </div>
                 </div>
                 <button className="meet">Schedule Meeting</button>
@@ -138,7 +139,7 @@ const App=()=>{
                     <div className="dropDownContent">
                       <Link className="dropPoint" to="/react_jsx_test/scroll">Scroll</Link>
                       <Link className="dropPoint" to="/react_jsx_test/scrollpop">ScrollPop</Link>
-                      <Link className="dropPoint" to="/react_jsx_test/">R 3</Link>
+                      <Link className="dropPoint" to="/react_jsx_test/scrollimage">ScrollImage</Link>
                     </div>
                   </div>
                 </div>
@@ -163,6 +164,7 @@ const App=()=>{
         <Route path="/react_jsx_test/fadeeffect" element={<FadeEffect />} />
         <Route path="/react_jsx_test/scroll" element={<Scroll />} />
         <Route path="/react_jsx_test/scrollpop" element={<ScrollPop />} />
+        <Route path="/react_jsx_test/scrollimage" element={<ScrollImage />} />
       </Routes>
     </BrowserRouter>
   );
