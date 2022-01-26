@@ -1,11 +1,13 @@
 import React, {useRef, useEffect} from "react";
 import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 import tanjiro from "./images/tanjiro.jpg";
 import nezuko from "./images/nezuko.jpg";
 import zenitsu from "./images/zenitsu.jpg";
 import "./ScrollPop.css";
 
 function ScrollPop() {
+  gsap.registerPlugin(ScrollTrigger);
   const ref=useRef(null);
   useEffect(()=>{
     const element = ref.current;
@@ -16,7 +18,7 @@ function ScrollPop() {
       opacity: 1,
       y:0,
       scrollTrigger: {
-        trigger: element.querySelector("scrollpopFirst"),
+        trigger: element.querySelector(".scrollpopFirst"),
         start: "top top",
         end: "bottom center",
         scrub: true,
