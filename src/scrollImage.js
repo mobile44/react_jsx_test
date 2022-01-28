@@ -8,6 +8,38 @@ import "./ScrollImage.css";
 
 function ScrollImage() {
   gsap.registerPlugin(ScrollTrigger);
+  const ref = useRef();
+  useEffect(()=>{
+    const el = ref.current;
+    gsap.utils.toArray(".scrollimageSection").forEach(item=>{
+      /*gsap.fromTo(el, {
+        opacity:0,
+        x: 0,
+      }, {
+        opacity: 1,
+        x: 100,
+        duration: 3,
+      });*/
+      let tl = gsap.timeline({
+        scrollTrigger: {el,
+          trigger: item,
+          start: "top center",
+          end: "bottom +=100", /*()=>"+=" + el.offsetWidth,*/
+          scrub: true,
+          pin: true,
+          anticipatePin: 1,
+          /*markers: true,*/
+        },
+        defaults: {ease: "none"}
+      });
+      tl.fromTo(item.querySelector(".scrollimageAfter"),{opacity:1},{opacity:0, duration: 4});
+      /*tl.fromTo(item.querySelector(".scrollimageAfter"),{opacity: 0, y:0},{opacity: 1,y:-500,});*/
+      /*tl.fromTo(item.querySelector(".scrollimageAfter"),{xPercent: -100, x:0},{xPercent: 0},0);*/
+    });
+  },[])
+  
+  /*
+  gsap.registerPlugin(ScrollTrigger);
   const ref=useRef(null);
   useEffect(()=>{
     const element = ref.current;
@@ -25,10 +57,11 @@ function ScrollImage() {
       }
     });
   },[]);
+  */
   return (
     <div className="scrollimageBody">
       <div className="scrollimagePage">
-        <h1>Scroll down to switch off</h1>
+        <div><h1>Scroll up and down</h1></div>
         <div className="scrollimageSection" ref={ref}>
           <div className="scrollImage scrollimageBefore">
             <img src={lightOn} alt="On"/>

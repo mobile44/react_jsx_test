@@ -12,7 +12,7 @@ function Scroll() {
       delay: 1,*/
       scrollTrigger: {
         trigger: "#thirdCircle",
-        markers: true,
+        /*markers: true,*/
         start: "top center",
         end: "bottom 80px",
         scrub: true,
